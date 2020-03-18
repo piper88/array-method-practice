@@ -1,0 +1,22 @@
+{
+  "name": "array-method-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misspants87/array-method-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misspants87/array-method-practice/issues"
+  },
+  "homepage": "https://github.com/misspants87/array-method-practice#readme"
+}
