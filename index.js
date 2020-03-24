@@ -24,3 +24,11 @@ console.log(`after shift ${easy.arrayShift(array1)}`);
 array1 = [1,2,3,4,5];
 
 console.log(`after unshift ${easy.arrayUnshift(array1, 0)}`);
+
+array1 = [1,2,3,4,5];
+
+//should return 4
+console.log(`after indexOf ${easy.arrayIndexOf(array1, 5)}`)
+
+array1 = [1,2,3,4,5];
+console.log(`after indexOf with item not found ${easy.arrayIndexOf(array1, 12)}`);
