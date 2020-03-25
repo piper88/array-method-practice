@@ -42,9 +42,13 @@ const harder = require('./lib/harder.js');
 
 let array1 = [1,2,3];
 console.log(`should return [1,2,3,4,5] ${harder.arraySplice(array1, 2, 0, [4,5])}`)
-
+//
 array1 = [1,2,3];
 console.log(`should return [1,2] ${harder.arraySplice(array1, 2, 1)}`)
 
 array1 = [1,2,3];
-console.log(`should return [1] ${harder.arraySplice(array1, 2, 2)}`)
+console.log(`should return [1] ${harder.arraySplice(array1, 2, 2)}`);
+
+
+// array1 = [1,2,3];
+// console.log(`should return [] ${harder.arraySplice(array1, 2, -1)}`);
