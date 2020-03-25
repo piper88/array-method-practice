@@ -37,9 +37,14 @@ const harder = require('./lib/harder.js');
 // array1 = [1,2,3];
 // // exports.arraySplice = function(originalArray, start, deleteCount, itemsToAdd)
 
+// let array1 = [1,2,3];
+// console.log(`should return [1,2,8,3] ${harder.arraySplice(array1, 1, 0, 8)}`);
+
 let array1 = [1,2,3];
-console.log(`should return [1,2,8,3] ${harder.arraySplice(array1, 1, 0, 8)}`);
+console.log(`should return [1,2,3,4,5] ${harder.arraySplice(array1, 2, 0, [4,5])}`)
 
 array1 = [1,2,3];
+console.log(`should return [1,2] ${harder.arraySplice(array1, 2, 1)}`)
 
-console.log(`should return [1,2,3,4,5] ${harder.arraySplice(array1, 2, 0, [4,5])}`)
+array1 = [1,2,3];
+console.log(`should return [1] ${harder.arraySplice(array1, 2, 2)}`)
