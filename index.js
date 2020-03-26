@@ -33,13 +33,41 @@ const harder = require('./lib/harder.js');
 //
 // array1 = [1,2,3,4,5];
 // console.log(`after indexOf with item not found ${easy.arrayIndexOf(array1, 12)}`);
-//
-// array1 = [1,2,3];
-// // exports.arraySplice = function(originalArray, start, deleteCount, itemsToAdd)
 
 let array1 = [1,2,3];
-console.log(`should return [1,2,8,3] ${harder.arraySplice(array1, 1, 0, 8)}`);
+// exports.arraySplice = function(originalArray, start, deleteCount, itemsToAdd)
+
+//add to middle
+//should actually return 1,8,2,3
+//start is 1
+console.log(`should return [1,8,2,3] ${harder.arraySplice(array1, 1, 0, 8)}`);
+
+// add to beginning
+console.log(`should return [8,1,2,3] ${harder.arraySplice(array1, 0, 0, 8)}`);
+
+//add multiple to end
+array1 = [1,2,3];
+console.log(`should return [1,2,3,4,5] ${harder.arraySplice(array1, 3, 0, [4,5])}`)
 
 array1 = [1,2,3];
+console.log(`should return [1,2,3,4,5,6] ${harder.arraySplice(array1, 3, 0, [4,5,6])}`)
 
-console.log(`should return [1,2,3,4,5] ${harder.arraySplice(array1, 2, 0, [4,5])}`)
+//add multiple to middle
+array1 = [1,2,3];
+console.log(`should return [1,4,5,6,2,3] ${harder.arraySplice(array1, 1, 0, [4,5,6])}`)
+
+//remove 1 from end
+array1 = [1,2,3];
+console.log(`should return [1,2] ${harder.arraySplice(array1, 2, 1)}`)
+
+//remove multiple from end
+array1 = [1,2,3];
+console.log(`should return [1] ${harder.arraySplice(array1, 2, 2)}`);
+
+//remove all items
+array1 = [1,2,3];
+console.log(`should return [] ${harder.arraySplice(array1, 2, 3)}`);
+
+//with negative deleteCount
+array1 = [1,2,3];
+console.log(`should return [1,2,3] ${harder.arraySplice(array1, 2, -1)}`);
