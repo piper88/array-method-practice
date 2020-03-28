@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/misspants87/array-method-practice/issues"
   },
-  "homepage": "https://github.com/misspants87/array-method-practice#readme"
+  "homepage": "https://github.com/misspants87/array-method-practice#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "expect": "^25.2.3"
+  }
 }
