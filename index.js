@@ -5,7 +5,11 @@ const easy = require('./lib/easy.js');
 const add = require('./lib/splice/add.js');
 
 
-// let array1 = [1,2,3];
+let array1 = [1,2,3];
+
+// //adding 1 to end
+array1 = [1,2,3];
+console.log(`should return [1,2,3,47] ${add.arrayAdd(array1, 3, 0, 47)}`);
 // exports.arrayAdd = function(originalArray, start, removeCount, itemsToAdd)
 
 // console.log(`should return [1,2,3,5] ${easy.arrayPush(array1, 5)}`);
