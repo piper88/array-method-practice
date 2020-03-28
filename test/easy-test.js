@@ -47,7 +47,12 @@ const assert = require('assert');
         let result = easy.arrayIndexOf([1,2,3,4], 1);
         assert.deepStrictEqual(result, 0, 'was not 0')
       })
-    })
+      it ('should throw an item not found error', function(){
+        assert.throws(function() {
+          easy.arrayIndexOf([1,2,3,4]);
+        }, 'should have thrown an error');
+      });
+    });
   });
 
 
