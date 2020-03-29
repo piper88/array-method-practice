@@ -37,6 +37,13 @@ describe('testing module splice add', function() {
       let result = spliceAdd.arrayAdd([1,2,3], 0, 0, [4,5,6]);
       assert.deepStrictEqual(result, [4,5,6,1,2,3], 'was not [4,5,6,1,2,3]');
     })
+    //when start is negative
+    it('should return [1,2,4,3]', function() {
+      let result = spliceAdd.arrayAdd([1,2,3], -1, 0, 4);
+      assert.deepStrictEqual(result, [1,2,4,3], 'was not [1,2,4,3]');
+    })
+    //when start is greater than length
+    //if length + start is less than 0
   })
 })
 
