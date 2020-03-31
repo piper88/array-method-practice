@@ -17,7 +17,7 @@ describe('testing module replace', function() {
     })
     //replace all items
     it('should return ["carol", "baskin", "is", "too"]', function() {
-      let result = replace.arrayReplace(['joe', 'exotic', 'is', 'crazy'], 0, 4, ['carol', 'baskin', 'is', 'too']);
+      let result = replace.arrayReplace(['nick', 'is', 'too'], 0, 4, ['carol', 'baskin', 'is', 'too']);
       assert.deepStrictEqual(result, ['carol', 'baskin', 'is', 'too'], 'was not "carol baskin is too"' );
     })
   })
